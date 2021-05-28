@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: gray;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+:root {
+  --nav-width: 0%;
+  --a-display: none;
+  --logo-display: none;
+  --line-color: #5b5c5a;
+}
+.main nav {
+  position: fixed;
+  height: 100px;
+  width: var(--nav-width);
+  background-color: #595a5c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 0 2px #000;
+}
+.show {
+  --nav-width: 50%;
+  --a-display: flex;
+  --logo-display: flex;
+  --line-color: #f4f3cd;
+}
+.main nav .logo h1 {
+  display: var(--logo-display);
+  color: white;
+  padding: 10px;
+}
+.main nav .links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main nav .links a {
+  text-decoration: none;
+  font-size: auto;
+  display: var(--a-display);
+  color: #cdd5d5;
+  font-weight: 1000;
+  padding: 10px;
+  transition: 0.5s;
+  border-radius: 50px;
+  background-color: #3b3c38;
+}
+.main nav .links a:hover {
+  background-color: #3b3c38;
+  transform: scale(1.1, 1.1);
+  border-radius: 0;
+}
+.main nav .button {
+  height: 100px;
+  width: 20px;
+  margin-right: -20px;
+  background-color: #d3d9d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px #000;
+}
+.main nav .button .line {
+  height: 50px;
+  width: 5px;
+  background-color: var(--line-color);
+  border-radius: 10px;
+}
