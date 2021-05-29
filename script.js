@@ -1,3 +1,3 @@
-function show(){
-  document.body.classList.toggle('show');
+function show() {
+  document.body.classList.toggle('toggle_button');
 }

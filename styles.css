@@ -32,7 +32,7 @@ body {
   transition: 0.5s;
   box-shadow: 0 0 2px #000;
 }
-.show {
+.toggle_button {
   --nav-width: 50%;
   --a-display: flex;
   --logo-display: flex;
@@ -85,7 +85,7 @@ body {
   border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
-  .show {
+  .toggle_button {
     --nav-width: 90%;
   }
 }
